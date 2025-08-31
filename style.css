@@ -1,14 +1,40 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  height: 100vh;
+  background-color: #0a0a0a;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   text-align: center;
-  color: #fff;
-  background-image: url('https://share.google/126UYL40fSWYMvl3P'); /* apni image ka naam yahan dal */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+.container h1 {
+  font-size: 3rem;
+  color: #00ffcc;
+  animation: neon 1.5s ease-in-out infinite alternate;
+}
+.container h2 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #aaa;
+}
+.links a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #00ffcc;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.links a:hover {
+  color: #ff0066;
+}
+.footer {
+  margin-top: 40px;
+  color: #ff0066;
+}
+@keyframes neon {
+  from { text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc; }
+  to { text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc; }
 }
